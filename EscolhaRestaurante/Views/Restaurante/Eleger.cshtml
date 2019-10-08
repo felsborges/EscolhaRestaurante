@@ -1,0 +1,28 @@
+﻿@model EscolhaRestaurante.Models.ResultadoViewModel
+
+@{
+    ViewData["Title"] = "Eleger";
+}
+
+<h1>Restaurante Eleito</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Restaurante)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Restaurante)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.QuantidadeVotos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.QuantidadeVotos)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Voltar para a tela inicial</a>
+</div>

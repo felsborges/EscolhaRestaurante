@@ -1,0 +1,15 @@
+﻿@model EscolhaRestaurante.Models.VotoViewModel
+
+@{
+    ViewData["Title"] = "Obrigado";
+}
+
+<h1>Obrigado</h1>
+
+<p>
+    <b>@Model.Nome</b>, obrigado pela sua particição na escolha do restaurante!
+</p>
+
+<div class="text-center">
+    <a class="btn btn-primary" asp-action="Index">Voltar para a tela inicial</a>
+</div>

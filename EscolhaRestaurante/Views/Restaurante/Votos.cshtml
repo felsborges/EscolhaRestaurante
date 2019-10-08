@@ -1,0 +1,46 @@
+﻿@model IEnumerable<EscolhaRestaurante.Models.VotoViewModel>
+
+@{
+    ViewData["Title"] = "Votos";
+}
+
+<h1>Votos</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Restaurante)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataVoto)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Restaurante)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataVoto)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<a asp-action="Index">Voltar para a tela inicial</a>

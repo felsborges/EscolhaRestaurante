@@ -12,5 +12,6 @@ namespace EscolhaRestaurante.UI.Web.Controllers
         {
             return View();
         }
+
     }
 }
